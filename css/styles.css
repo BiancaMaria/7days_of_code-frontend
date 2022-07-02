@@ -1,0 +1,207 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+
+:root {
+  --ff-primary: "Montserrat", sans-serif;
+  --clr-background: #f5f5f5;
+  --color-white: #ffffff;
+  --color-light-white: #f6f6f6;
+  --dark-gray: #464646;
+  --light-gray: #a3a3a3;
+  --light-orange: #ffb050;
+  --light-button: #ececec;
+  --light-blue: #4894ff;
+  --spacing: 0.25rem;
+  --transition: all 0.2s linear;
+  --background: linear-gradient(165.96deg, #f8f4ff 0%, #eff0f4 100%);
+  /* --dark-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2); */
+}
+
+/**********************************/
+/* 1. Estilos Gerais
+/**********************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--background);
+  font-family: var(--ff-primary);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+div.profile-header > img.profile-header__logo {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+}
+
+.profile-infor {
+  padding-left: 3.5%;
+}
+
+.profile-header__title {
+  color: var(--dark-gray);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35.2px;
+}
+
+.profile-header__subtitle {
+  color: var(--light-gray);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card-container__card {
+  background: var(--color-white);
+  border-radius: 8px;
+  height: 193px;
+  width: 328px;
+  position: relative;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 4px;
+}
+
+div.card-container > p.time {
+  /* background:pink; */
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25.6px;
+  padding-left: 1.5rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 42px;
+}
+
+.card-container__infor {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: space-around;
+  border-bottom: 2px solid rgba(70, 70, 70, 0.1);
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+div.card-container-infor__header-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 65%;
+}
+
+div.card-container-infor__header-card > img.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+div.card-container__infor__circulo {
+  background: var(--color-light-white);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+div.card-container__infor__circulo > img.chat2 {
+  margin: 1rem;
+  width: 14px;
+  height: 14px;
+}
+
+div.card-container__infor-card {
+  padding-left: 1rem;
+}
+
+div.card-container__infor-card > p.avatar-nome {
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 210%;
+  width: 94px;
+  height: 22px;
+}
+
+.card-container__type-legend {
+  display: flex;
+  align-items: flex-start;
+}
+
+div.card-container__type-legend > img.camera {
+  width: 16px;
+  padding-top: 0.5rem;
+}
+
+div.card-container__type-legend > p.type-consulta {
+  color: var(--light-gray);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  margin-left: 8px;
+  width: 101px;
+  height: 19px;
+}
+
+div.card-container__infor-detalhes {
+  height: 52%;
+  padding-top: 2rem;
+}
+
+.card-container__infor-detalhes > p.horas {
+  color: var(--dark-gray);
+  padding-left: 2rem;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  /* width: 119px; */
+  height: 19px;
+}
+
+div.infor-detalhes__button-group {
+  margin-top: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  background: none;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--ff-primary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  width: 139px;
+  height: 48px;
+}
+
+button.btn-video {
+  background: var(--light-orange);
+  color: var(--color-white);
+}
+
+button.btn-audio {
+  border: 1px solid var(--light-button);
+}
